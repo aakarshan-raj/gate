@@ -1,3 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="oneTitle">Introduction</string>
+    <string name="onePara1">Welcome to the world of C++, a\npowerful and versatile programming language that has been a cornerstone of software development for decades. From simple console applications to complex enterprise systems, C++ has proven itself to be an indispensable tool for programmers across a wide range of industries.</string>
+    <string name="onePara2">With its ability to handle low-level memory management, object-oriented programming, and high-performance computing, C++ is often the language of choice for software developers who demand the utmost control and flexibility in their code. Whether you are building applications for desktops, mobile devices, or the web, C++ provides you with the power to create software that performs at the highest levels.</string>
+    <string name="onePara3">But beyond its practical applications, C++ is also a beautiful language in its own right. With its elegant syntax, powerful features, and rich libraries, C++ is a joy to use for those who appreciate the art and craft of programming. From the simplicity of a well-written function to the complexity of a large-scale project, C++ allows you to express your ideas in a way that is both intuitive and efficient.</string>
+    <string name="onePara4">So whether you are just starting out on your programming journey or you are a seasoned developer looking to take your skills to the next level, C++ is a language that has something to offer everyone. Join us as we explore the beauty and power of C++, and discover for yourself why this language continues to be one of the most beloved and respected tools in the world of software development.</string>
+    <string name="onePara5">To get started, install g++ </string>
+    <string name="onePara6">sudo apt-get install g++</string>
+    <string name="onePara7">On windows use WSL  to use g++ from shell</string>
 </resources>

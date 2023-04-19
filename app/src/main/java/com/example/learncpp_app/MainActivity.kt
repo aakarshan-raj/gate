@@ -1,6 +1,5 @@
 package com.example.learncpp_app
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
@@ -9,7 +8,6 @@ import androidx.appcompat.widget.Toolbar
 import androidx.coordinatorlayout.widget.CoordinatorLayout
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
-import com.google.android.material.internal.ContextUtils.getActivity
 import com.google.android.material.navigation.NavigationView
 
 class MainActivity : AppCompatActivity() {
@@ -38,93 +36,23 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 R.id.two-> {
-                    supportFragmentManager.beginTransaction().replace(R.id.frame,VariablesData()).commit()
-                    supportActionBar?.setTitle("Variables and Data Types")
-                    drawerLayout.closeDrawers()
-                }
-                R.id.three->{
-                    supportFragmentManager.beginTransaction().replace(R.id.frame,OperatorsExpression()).commit()
-                    supportActionBar?.setTitle("Operators and Expressions")
-                    drawerLayout.closeDrawers()
-                }
-                R.id.four->{
-                    supportFragmentManager.beginTransaction().replace(R.id.frame,ControlStructure()).commit()
-                    supportActionBar?.setTitle("Control Structures")
-                    drawerLayout.closeDrawers()
-                }
-                R.id.five->{
-                    supportFragmentManager.beginTransaction().replace(R.id.frame,Functions()).commit()
-                    supportActionBar?.setTitle("Functions")
-                    drawerLayout.closeDrawers()
-                }
-                R.id.six->{
-                    supportFragmentManager.beginTransaction().replace(R.id.frame,ArraysPointer()).commit()
-                    supportActionBar?.setTitle("Arrays and Pointers")
-                    drawerLayout.closeDrawers()
-                }
-                R.id.seven->{
-                    supportFragmentManager.beginTransaction().replace(R.id.frame,ClassesObject()).commit()
-                    supportActionBar?.setTitle("Classes and Objects")
-                    drawerLayout.closeDrawers()
-                }
-                R.id.eight->{
-                    supportFragmentManager.beginTransaction().replace(R.id.frame,InheritancePoly()).commit()
-                    supportActionBar?.setTitle("Inheritance and Polymorphism")
+                    supportFragmentManager.beginTransaction().replace(R.id.frame,CheckIn()).commit()
+                    supportActionBar?.setTitle("Check In")
                     drawerLayout.closeDrawers()
                 }
 
-                R.id.nine-> {
-                    supportFragmentManager.beginTransaction().replace(R.id.frame,Template()).commit()
-                    supportActionBar?.setTitle("Templates")
-                    drawerLayout.closeDrawers()
-                }
-                R.id.ten->{
-                    supportFragmentManager.beginTransaction().replace(R.id.frame,STL()).commit()
-                    supportActionBar?.setTitle("STL")
-                    drawerLayout.closeDrawers()
-                }
-                R.id.eleven->{
-                    supportFragmentManager.beginTransaction().replace(R.id.frame,InputOutput()).commit()
-                    supportActionBar?.setTitle("Input and Output Streams")
-                    drawerLayout.closeDrawers()
-                }
-                R.id.twelve->{
-                    supportFragmentManager.beginTransaction().replace(R.id.frame,Memory()).commit()
-                    supportActionBar?.setTitle("Memory Management and Smart Pointers")
-                    drawerLayout.closeDrawers()
-                }
-                R.id.thirteen->{
-                    supportFragmentManager.beginTransaction().replace(R.id.frame,Exception()).commit()
-                    supportActionBar?.setTitle("Exception Handling")
-                    drawerLayout.closeDrawers()
-                }
-                R.id.fourteen->{
-                    supportFragmentManager.beginTransaction().replace(R.id.frame,Multithreading()).commit()
-                    supportActionBar?.setTitle("Multithreading and Concurrency")
-                    drawerLayout.closeDrawers()
-                }
-                R.id.fifteen->{
-                    supportFragmentManager.beginTransaction().replace(R.id.frame,Debug()).commit()
-                    supportActionBar?.setTitle("Debugging Techniques and Tools")
-                    drawerLayout.closeDrawers()
-                }
-                R.id.sixteen->{
-                    supportFragmentManager.beginTransaction().replace(R.id.frame,End()).commit()
-                    supportActionBar?.setTitle("End")
-                    drawerLayout.closeDrawers()
-                }
             }
             return@setNavigationItemSelectedListener true
         }
     }
     fun mainScreen(){
-        supportFragmentManager.beginTransaction().replace(R.id.frame,Introduction()).commit()
-        supportActionBar?.setTitle("Introduction to C++")
+        supportFragmentManager.beginTransaction().replace(R.id.frame,CheckOut()).commit()
+        supportActionBar?.setTitle("Check Out")
         drawerLayout.closeDrawers()
     }
     fun setToolBar(){
         setSupportActionBar(toolbar)
-        supportActionBar?.title = "LearnCpp"
+        supportActionBar?.title = "Gate Management System"
         supportActionBar?.setHomeButtonEnabled(true)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
     }
@@ -140,7 +68,7 @@ class MainActivity : AppCompatActivity() {
     override fun onBackPressed() {
         val frag = supportFragmentManager.findFragmentById(R.id.frame)
         when(frag){
-           !is Introduction -> mainScreen()
+           !is CheckIn -> mainScreen()
             else->{
               super.onBackPressed()
             }

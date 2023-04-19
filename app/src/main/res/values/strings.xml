@@ -1,25 +1,11 @@
 <resources>
-    <string name="app_name">LearnCpp</string>
+    <string name="app_name">Gate</string>
     <string name="open_drawer">Open Drawer</string>
     <string name="close_drawer">Close Drawer</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello fragment</string>
-    <string name="one">1. Introduction to C++</string>
-    <string name="two">2. Variables and Data Types</string>
-    <string name="three">3. Operators and Expressions</string>
-    <string name="four">4. Control Structures</string>
-    <string name="five">5. Functions</string>
-    <string name="six">6. Arrays and Pointers</string>
-    <string name="seven">7. Classes and Objects</string>
-    <string name="eight">8. Inheritance and Polymorphism</string>
-    <string name="nine">9. Templates</string>
-    <string name="ten">10. STL</string>
-    <string name="eleven">11. Input and Output Streams</string>
-    <string name="twelve">12. Memory Management and Smart Pointers</string>
-    <string name="thirteen">13. Exception Handling</string>
-    <string name="fourteen">14. Multithreading and Concurrency</string>
-    <string name="fifteen">15. Debugging Techniques and Tools</string>
-    <string name="sixteen">16. End</string>
+    <string name="one">Check Out</string>
+    <string name="two">Check In</string>
 
 
 </resources>

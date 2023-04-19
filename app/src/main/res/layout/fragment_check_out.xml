@@ -3,9 +3,44 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".VariablesData">
+    tools:context=".CheckOut">
 
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+<TextView
+    android:layout_marginTop="50dp"
+    android:id="@+id/text"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Enter the registration Number"
+    android:textSize="30sp"
+    android:textStyle="bold"
+    android:layout_centerHorizontal="true"
+    />
+    <EditText
+        android:inputType="number"
+        android:fontFamily="sans-serif-black"
+        android:layout_below="@+id/text"
+        android:id="@+id/edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="                     registration number"
+        android:layout_margin="25dp"
+        />
+
+    <Button
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/edit_text"
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CHECK OUT"
+        android:background="#FD0000"
+        />
 
 
+</RelativeLayout>
 </FrameLayout>
